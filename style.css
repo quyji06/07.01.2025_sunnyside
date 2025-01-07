@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
+*{
     margin: 0;
 }
-
-body {
-    width: 100vw;
+body{
+    font-size: 18px;
 }
-
-header {
-    width: 100%;
+header{ 
     background-image: url(images/desktop/image-header.jpg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1100px;
+    background-position: center;
+    height: 1000px;
 }
 
-h1 {
+h1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
     font-family: 'Fraunces';
     text-transform: uppercase;
     color: white;
     letter-spacing: 7px;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
 }
-
-.button {
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Barlow';
+}
+.button{
     border: none;
     padding: 12px 20px;
     color: black;
@@ -39,67 +39,64 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: none;  
 }
-
-header a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Barlow';
-}
-
-.nav {
-    width: 1440px;
+.nav{
     display: flex;
     justify-content: space-between;
+    width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
-
-nav {
+nav{
     margin: 30px 50px;
 }
-
-nav a {
-    margin: 15px;
+nav a{
+    margin: 17px;
 }
-
-.nav svg {
+.nav svg{
     margin: 30px 50px;
 }
-
-.arrow {
+.arrow{
     position: absolute;
-    top: 64%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 36px;
     height: 114px;
 }
 
-.container {
+/*------------BOXY---------------*/
+
+.container{
     width: 1440px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-
 }
 .box1{
     display: flex;
 }
 .box2{
-    margin-top: -4px;
-    display: flex;
+    display: flex;  
+    margin-top: -4px; 
 }
 .text1{
     margin-top: auto;
     margin-bottom: auto;
-    color: hsl(212, 27%, 19%);
-    width: 50%;
 }
 
+.text1 p{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Barlow';
+    margin-bottom: 30px;
+    color: hsl(213, 9%, 39%);
+    font-weight: 600;
+}
 .text1 h2{
     width: 50%;
     margin-left: auto;
@@ -109,15 +106,6 @@ nav a {
     font-weight: 900;
     margin-bottom: 30px;
     color: hsl(212, 27%, 19%);
-}
-.text1 p{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    font-family: 'Barlow';
-    margin-bottom: 30px;
-    color: hsl(213, 9%, 39%);
-    font-weight: 600;
 }
 .text1 a {
     margin: 0 190px;
@@ -146,6 +134,15 @@ nav a {
     margin-bottom: auto;
 }
 
+.text2 p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Barlow';
+    margin-bottom: 30px;
+    color: hsl(213, 9%, 39%);
+    font-weight: 600;
+}
 .text2 h2{
     width: 60%;
     margin-left: auto;
@@ -156,25 +153,15 @@ nav a {
     margin-bottom: 30px;
     color: hsl(212, 27%, 19%);
 }
-.text2 p{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    font-family: 'Barlow';
-    margin-bottom: 30px;
-    color: hsl(213, 9%, 39%);
-    font-weight: 600;
-}
 .text2 a {
     margin: 0 160px;
-    width: 60%;
+    width: 50%;
     font-family: 'Fraunces';
     text-transform: uppercase;
     font-weight: 900;
     text-decoration: none;
     position: relative;
     color: hsl(212, 27%, 19%);
-    
 }
 
 .text2 a::after {
@@ -188,10 +175,21 @@ nav a {
     background-color: hsl(7, 99%, 70%);
     border-radius: 5px; 
 }
-
-
-
-
-.img1 {
-
+.box3{
+    display: flex;
+    margin-top: -5px;
+}
+.img3{
+    width: 720px;
+    height: 600px;
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img4{
+    width: 720px;
+    height: 600px;
+    background-image: url(images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
